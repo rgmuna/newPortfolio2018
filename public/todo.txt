@@ -1,0 +1,24 @@
+section 1
+
+
+
+section 2
+- style photos
+- add preston website
+- make product modals w/ UI Bootstrap
+
+section 3
+- style
+
+section 4
+
+
+section 5
+- make contact stuff
+
+
+- fix gradient on final submit button
+- fix responsive menu
+- add verification to email
+- check more cross browser
+- JS check

@@ -1,0 +1,436 @@
+// color variables
+$egg-white: #f9f9f9;
+$superlight-blue: #D0EDF3;
+$light-blue: #B2CFD6;
+$medium-blue: #53b3cc;
+$medium-gray: #5d8c98;
+$dark-blue: #21729f	;
+$dark-gray: #3f565b;
+$darkest: #233237;
+
+
+
+html, body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+// nav styling
+.fixedNav {
+  position: fixed;
+  z-index: 1;
+  margin-top: 50px;
+  background-color: $darkest;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+.navbar-toggle{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  float: left;
+}
+
+.navbar{
+  border: none;
+  min-height: auto;
+}
+nav li, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+nav li, nav a {
+  display: block; }
+
+nav a {
+  padding: 20px;
+  color: $egg-white;
+  text-decoration: none;
+}
+
+a:hover {
+  background: $egg-white;
+  color: $dark-blue;
+  text-decoration: none;
+}
+nav a:focus {
+  text-decoration: none;
+  color: $egg-white;
+}
+
+a.active {
+  background: $medium-gray;
+  color: $egg-white;
+}
+
+a.active#aboutMe{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+a#aboutMe:hover{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+a.active#contactSect{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+a#contactSect:hover{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+// shared section styling-------------------------------------------------------
+.sectionTitle{
+  color: $dark-blue;
+  font-weight: 200;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+.no-padding{
+  padding: 0px;
+}
+#section-0{
+  height: 100vh;
+  min-height: 800px;
+  background-image: url('../assets/img/footer_lodyas.png');
+}
+#section-1{
+  background-color: $superlight-blue;
+}
+#section-2{
+  background-color: $dark-blue;
+}
+#section-3{
+  background-color: $superlight-blue;
+}
+#section-4{
+  background-color: white;
+}
+#section-5{
+  color: white;
+  background-image: url('../assets/img/footer_lodyas.png');
+  height: 100vh;
+}
+
+// first section
+.imgStyling{
+  margin-top: 100px;
+  height: 300px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+}
+
+.mainTitle{
+  color: $medium-blue;
+  font-weight: 200;
+  font-size: 60px;
+}
+.frontSubTitle{
+  color: $egg-white;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+
+.wrap {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px; }
+
+//experiences
+.subtitle{
+  font-weight: 300;
+  color: $dark-blue
+}
+
+.itemTitle{
+  font-weight: 500;
+  color: $darkest;
+  font-size: 15px;
+
+}
+
+.date{
+  font-size: 10px;
+}
+
+.experienceText{
+  color: $dark-gray;
+  font-weight: 300;
+}
+
+.aboutTitle{
+  margin: 0px;
+  color: $dark-blue;
+  font-weight: 300;
+  text-align: right;
+}
+
+.downloadBtn{
+  background-color: $medium-gray;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 200;
+}
+// portfolio--------------
+
+.caption{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: none;
+  text-align: center;
+}
+
+.portfolio-link:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-item :hover{
+  img{
+    opacity: .3 !important;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    background-color: $light-blue;
+    z-index: 0;
+  }
+}
+
+
+
+.mainImage{
+  // height: 194px;
+  position: relative;
+
+}
+// .magnifier{
+//   position:absolute;
+//   top: 70px;
+//   left: 100px;
+//   z-index: 3;
+// }
+
+.portfolio-link:hover{
+  // background-color: red;
+}
+
+//abilities---------------
+.abilityContainer{
+  color: $dark-blue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  -webkit-transition: padding-right .4s; /* For Safari 3.1 to 6.0 */
+  transition: padding-right .4s;
+}
+.location{
+  font-size: 12px;
+  color: $dark-blue;
+}
+.ceneteredContain{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.abilityName{
+  text-align: left;
+}
+
+.abilityLevel{
+  text-align: right;
+}
+
+.abilityContainer:hover{
+  // font-size: 16px;
+  background-color: $superlight-blue;
+  padding-right: 0px;
+  border-radius: 3px;
+}
+
+section {
+  padding: 50px 150px 30px 150px;
+}
+
+footer {
+  text-align: center; }
+
+button {
+  font-size: 18px;
+  border: 0;
+  padding: 15px 30px;
+  background: #00AC7F;
+  color: #fff;
+  cursor: pointer;
+}
+
+#contactList li{
+  display: inline;
+  color: white;
+}
+
+.modalBtn{
+  background-color: $dark-blue;
+  color: white;
+}
+
+.contactItems{
+  // display: inline-block;
+  margin: 20px 30px;
+  font-size: 40px;
+  color: $medium-gray;
+}
+.contactItems a{
+  color: $medium-gray;
+  cursor: pointer;
+}
+.contactItems a:focus{
+  color: $medium-gray;
+  background-color: transparent;
+}
+.contactItems a:hover{
+  color: $medium-gray;
+  background-color: transparent;
+}
+
+.contactLink{
+  font-weight: 200;
+  font-size: 17px;
+  color: white;
+}
+.contactLink a{
+  color: $medium-gray;
+}
+.contactLink a:hover{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.contactLink a:focus{
+  cursor: pointer;
+  color: $medium-gray;
+  text-decoration: none;
+}
+
+#tester{
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.hider {
+  animation: 1s showLink;
+  animation-fill-mode:forwards;
+}
+.hider2 {
+  animation: 1s showLink2;
+  animation-fill-mode:forwards;
+}
+.hider3 {
+  animation: 1s showLink3;
+  animation-fill-mode:forwards;
+}
+
+@keyframes showLink {
+  from {
+      width: 0px;
+  } to {
+      width: 200px;
+  }
+}
+@keyframes showLink2 {
+  from {
+      width: 0px;
+  } to {
+      width: 350px;
+  }
+}
+@keyframes showLink3 {
+  from {
+      width: 0px;
+  } to {
+      width: 240px;
+  }
+}
+
+#finalSection{
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  // border-bottom: 1px solid white;
+}
+
+.contactContainer{
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 30px 0px;
+}
+// modal styling ---------------------------------------------------------------
+.modal-title{
+  font-weight: 200;
+  font-size: 30px;
+  color: $dark-blue;
+}
+
+.modalCaption{
+  margin-top: 20px;
+}
+
+.modalLink{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+// media queries----------------------------------------------------------------
+
+//small screens
+@media (max-width: 768px){
+  section{
+    padding: 0px;
+  }
+  .contactItems{
+    display: inline-block;
+  }
+}

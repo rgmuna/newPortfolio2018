@@ -1,0 +1,348 @@
+html, body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.fixedNav {
+  position: fixed;
+  z-index: 1;
+  margin-top: 50px;
+  background-color: #233237;
+  margin-left: 10px;
+  padding: 0px; }
+
+.navbar-toggle {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  float: left; }
+
+.navbar {
+  border: none;
+  min-height: auto; }
+
+nav li, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+nav li, nav a {
+  display: block; }
+
+nav a {
+  padding: 20px;
+  color: #f9f9f9;
+  text-decoration: none; }
+
+a:hover {
+  background: #f9f9f9;
+  color: #21729f;
+  text-decoration: none; }
+
+nav a:focus {
+  text-decoration: none;
+  color: #f9f9f9; }
+
+a.active {
+  background: #5d8c98;
+  color: #f9f9f9; }
+
+a.active#aboutMe {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+a#aboutMe:hover {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+a.active#contactSect {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+a#contactSect:hover {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: transparent; }
+
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent; }
+
+.sectionTitle {
+  color: #21729f;
+  font-weight: 200;
+  font-size: 55px;
+  margin-bottom: 50px; }
+
+.no-padding {
+  padding: 0px; }
+
+#section-0 {
+  height: 100vh;
+  min-height: 800px;
+  background-image: url("../assets/img/footer_lodyas.png"); }
+
+#section-1 {
+  background-color: #D0EDF3; }
+
+#section-2 {
+  background-color: #21729f; }
+
+#section-3 {
+  background-color: #D0EDF3; }
+
+#section-4 {
+  background-color: white; }
+
+#section-5 {
+  color: white;
+  background-image: url("../assets/img/footer_lodyas.png");
+  height: 100vh; }
+
+.imgStyling {
+  margin-top: 100px;
+  height: 300px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.mainTitle {
+  color: #53b3cc;
+  font-weight: 200;
+  font-size: 60px; }
+
+.frontSubTitle {
+  color: #f9f9f9;
+  font-weight: 200;
+  font-size: 20px; }
+
+.wrap {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px; }
+
+.subtitle {
+  font-weight: 300;
+  color: #21729f; }
+
+.itemTitle {
+  font-weight: 500;
+  color: #233237;
+  font-size: 15px; }
+
+.date {
+  font-size: 10px; }
+
+.experienceText {
+  color: #3f565b;
+  font-weight: 300; }
+
+.aboutTitle {
+  margin: 0px;
+  color: #21729f;
+  font-weight: 300;
+  text-align: right; }
+
+.downloadBtn {
+  background-color: #5d8c98;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 200; }
+
+.caption {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: none;
+  text-align: center; }
+
+.portfolio-link:hover .overlay {
+  opacity: 1; }
+
+.portfolio-item :hover img {
+  opacity: .3 !important;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  background-color: #B2CFD6;
+  z-index: 0; }
+
+.mainImage {
+  position: relative; }
+
+.abilityContainer {
+  color: #21729f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  -webkit-transition: padding-right .4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: padding-right .4s; }
+
+.location {
+  font-size: 12px;
+  color: #21729f; }
+
+.ceneteredContain {
+  max-width: 300px;
+  margin: 0 auto; }
+
+.abilityName {
+  text-align: left; }
+
+.abilityLevel {
+  text-align: right; }
+
+.abilityContainer:hover {
+  background-color: #D0EDF3;
+  padding-right: 0px;
+  border-radius: 3px; }
+
+section {
+  padding: 50px 150px 30px 150px; }
+
+footer {
+  text-align: center; }
+
+button {
+  font-size: 18px;
+  border: 0;
+  padding: 15px 30px;
+  background: #00AC7F;
+  color: #fff;
+  cursor: pointer; }
+
+#contactList li {
+  display: inline;
+  color: white; }
+
+.modalBtn {
+  background-color: #21729f;
+  color: white; }
+
+.contactItems {
+  margin: 20px 30px;
+  font-size: 40px;
+  color: #5d8c98; }
+
+.contactItems a {
+  color: #5d8c98;
+  cursor: pointer; }
+
+.contactItems a:focus {
+  color: #5d8c98;
+  background-color: transparent; }
+
+.contactItems a:hover {
+  color: #5d8c98;
+  background-color: transparent; }
+
+.contactLink {
+  font-weight: 200;
+  font-size: 17px;
+  color: white; }
+
+.contactLink a {
+  color: #5d8c98; }
+
+.contactLink a:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: none; }
+
+.contactLink a:focus {
+  cursor: pointer;
+  color: #5d8c98;
+  text-decoration: none; }
+
+#tester {
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left; }
+
+.hider {
+  animation: 1s showLink;
+  animation-fill-mode: forwards; }
+
+.hider2 {
+  animation: 1s showLink2;
+  animation-fill-mode: forwards; }
+
+.hider3 {
+  animation: 1s showLink3;
+  animation-fill-mode: forwards; }
+
+@keyframes showLink {
+  from {
+    width: 0px; }
+  to {
+    width: 200px; } }
+
+@keyframes showLink2 {
+  from {
+    width: 0px; }
+  to {
+    width: 350px; } }
+
+@keyframes showLink3 {
+  from {
+    width: 0px; }
+  to {
+    width: 240px; } }
+
+#finalSection {
+  margin-bottom: 25px;
+  padding-bottom: 15px; }
+
+.contactContainer {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 30px 0px; }
+
+.modal-title {
+  font-weight: 200;
+  font-size: 30px;
+  color: #21729f; }
+
+.modalCaption {
+  margin-top: 20px; }
+
+.modalLink {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px; }
+
+@media (max-width: 768px) {
+  section {
+    padding: 0px; }
+  .contactItems {
+    display: inline-block; } }

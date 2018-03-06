@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en-us" ng-app="rmApp" ui-router-styles>
+
+    <head>
+
+        <title>Roque Muna Portfolio</title>
+        <!-- <meta property="og:image" content="https://prestoncinema.com/assets/img/LR2thumbnail5.jpg">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Preston Cinema Systems" />
+        <meta property="og:url" content="https://www.prestoncinema.com" />
+        <meta property="og:description" content="Innovative camera and lens control systems" /> -->
+
+        <!-- <link rel="icon" href="favicon.ico" type="image/gif" sizes="128x128"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <!-- <meta name="description" content="Preston Cinema Systems has been providing innovative camera and lens control systems for over 30 years.">
+        <meta name="keywords" content="Preston Cinema Systems; Preston Cinema; FI+Z; Micro Force; Focus Controls;  Lens Controls; Camera Controls; Light Ranger; Zoom Control; Camera Speed Controls"> -->
+	      <meta name="rating" content="general" />
+        <meta name="author" content="Roque" />
+
+        <!-- ui bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://use.fontawesome.com/416a0e94e8.js"></script>
+        <!-- load angular via CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-touch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-sanitize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
+        <!-- bootstrap scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <!-- angular plugin for stickiness -->
+        <script src="assets/js/angular-sticky.min.js"></script>
+        <!-- polyfill for internet explorer issues -->
+        <script src="https://cdn.rawgit.com/inexorabletash/polyfill/v0.1.34/polyfill.min.js"></script>
+        <!-- firebase and angularfire -->
+        <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.min.js"></script>
+        <!-- fix arrays that aren't filters -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toarrayfilter/1.0.2/toArrayFilter.min.js"></script>
+
+        <!-- smooth scroll -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
+
+
+        <script src="app.js"></script>
+        <link href="css/style.css" rel="stylesheet"></link>
+        <link rel="text/template" href="assets/templates/modal.html">
+
+        <!-- no javascript notification -->
+        <noscript>For site functionality it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript>
+
+    </head>
+
+    <body class="scroller" ng-controller="RMCtrl">
+
+      <nav class="navbar fixedNav navbar-inverse navbar-right" ng-class="{'colBtn' : isNavCollapsed}" role="navigation" ng-show="navPos.hideNav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" style="padding: 10px" ng-click="isNavCollapsed = !isNavCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse no-padding" uib-collapse="isNavCollapsed">
+          <ul>
+            <li><a id="aboutMe" href="#section-1" du-smooth-scroll du-scrollspy>About Me</a></li>
+            <li><a href="#section-2" du-smooth-scroll du-scrollspy>Portfolio</a></li>
+            <li><a href="#section-3" du-smooth-scroll du-scrollspy>Experiences</a></li>
+            <li><a href="#section-4" du-smooth-scroll du-scrollspy>Abilities</a></li>
+            <li><a id="contactSect" href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="section-0">
+        <div class="wrap container-fluid text-center">
+          <img class="imgStyling" src="assets/img/updatedProfile.jpg" alt="">
+          <h2 class="mainTitle"> Roque Mu&ntilde;a </h2>
+          <h3 class="frontSubTitle"> Web Developer </h3>
+        </div>
+      </section>
+
+      <section id="section-1">
+        <div class="wrap container-fluid">
+          <div class="row text-center">
+            <h2 class="sectionTitle">About Me</h2>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <h4 class="aboutTitle">Goals:</h4>
+            </div>
+            <div class="col-xs-10">
+                <p>With a creative mindset, passion for learning, strong technical and troubleshooting skill set, and a variety of work experiences, my goal is to pursue a career as a front end web developer where I can build websites and make tangible contributions towards an exciting product.</p>
+            </div>
+            <div class="col-xs-2">
+              <h4 class="aboutTitle">Current Job:</h4>
+            </div>
+            <div class="col-xs-10">
+                <p>For the last year I've spent nearly 100% of time at work coding. Starting with a brand new company website, I designed and built Preston Cinema System's business website from scratch, including a build system tutorial and quote generator/shopping cart using modern web technologies. Additionally, I completely overhauled the company's inventory tracking system by designing and building a suite of tools via a web app to generate barcodes and track products as they are produced and sold. </p>
+            </div>
+            <div class="col-xs-2">
+              <h4 class="aboutTitle">History:</h4>
+            </div>
+            <div class="col-xs-10">
+                <p>Aside from web development I've worked for the past several years as an electrical engineer, and before that I worked for almost three years as a competition producer for various reality TV shows. My work experiences have taught me the value of utilizing my unique skill set for tackling challenges from both a creative and technical angle.</p>
+            </div>
+            <div class="col-xs-12 text-center" style="margin-top: 30px;">
+              <a href="assets/Roque_Muna_Resume.pdf" class="downloadBtn" download><i class="fa fa-download"></i> Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-2">
+        <div class="wrap container-fluid">
+          <div class="row text-center">
+            <h2 class="sectionTitle" style="color: white;">Portfolio</h2>
+          </div>
+
+          <div class="row">
+           <div class=" col-sm-6 col-xs-12 portfolio-item" ng-repeat="(key, value) in portfolios">
+             <a class="portfolio-link" href="#" ng-click="openPortfolio(value)" data-toggle="modal">
+              <img ng-src="{{value.img}}" class="thumbnail mainImage img-responsive">
+              <div class="overlay">
+                <div class="caption">
+                  <i class="text fa fa-search-plus fa-3x"></i>
+                  <br />
+                  {{value.name}}
+                </div>
+              </div>
+            </a>
+           </div>
+
+         </div>
+        </div>
+      </section>
+
+      <section id="section-3">
+        <div class="wrap container-fluid">
+
+          <div class="row text-center">
+            <h2 class="sectionTitle">Experiences</h2>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <h3 class="subtitle"> Career </h3>
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Web Developer </div>
+              <div class="itemTitle"> Preston Cinema Systems </div>
+              <div class="date">OCTOBER 2016 - PRESENT </div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Santa Monica, CA </div>
+              <ul class="experienceText">
+                <li> Full time web developer for the past year </li>
+                <li> Designed and built the company <a href="https://www.prestoncinema.com" target="_blank">website</a> single-handedly from scratch with all new features </li>
+                <ul>
+                  <li>Created and implemented UI including a build-a-system tutorial and shopping cart/quote generator
+                  <li>Built as a single page application using AngularJS, UI-Router & UI-Bootstrap </li>
+                  <li>Utilized Firebase as a backend database</li>
+                </ul>
+                <li> Building a barcode scanning system <a href="https://inventory-tracking-c3b88.firebaseapp.com/#!/home" target="_blank">web app </a> that allows the company to keep track of inventory </li>
+                <ul>
+                  <li>Performs HTTP request to an API with firmware and repair info </li>
+                  <li>Interfaces with a barcode scanner to scan items in/out</li>
+                </ul>
+                <li>Tested front-end code in multiple browsers to ensure cross-browser compatibility</li>
+                <li>Ensured mobile responsiveness across a range of devices</li>
+                <li>Consulted and implemented best practices for development including staging/production environment separation and version control</li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Electrical Engineering Manager </div>
+              <div class="itemTitle"> Preston Cinema Systems </div>
+              <div class="date">OCTOBER 2014 - PRESENT </div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Santa Monica, CA </div>
+              <ul class="experienceText">
+                <li> Oversees repairs including interacting with customers </li>
+                <li> Analyzes production processes and implements solutions such as finding new rubber vendors that better met our needs </li>
+                <li> Redesigned testing procedures to catch defective units earlier in the production process</li>
+                <li> Debugged circuitry and analyzed systems using board schematics and hands-on technical analysis with an oscilloscope, spectrum analyzer and multimeter</li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Challenge Producer - <span>Various TV Shows </span>  </div>
+              <div class="date">JUNE 2012 - SEPTEMBER 2014</div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Various Cities </div>
+              <ul class="experienceText">
+                <li>  Supervised production of episode segments by identifying content goals, developing production plan, managing stakeholders, and ensuring successful project completion </li>
+                <li>  Designed, fabricated, tested, and produced electrical and mechanical components for competitions </li>
+                <li>  Troubleshot failed elements to identify and implement design improvements </li>
+                <li>  Acted as intermediate between vendors and production team to ensure effective communication </li>
+                <li>  Shows worked on include (but not limited to): Big Brother 14, 15, 16, SyFy's Opposite Worlds, Oh Sit! </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Research Associate - <span> IHS iSuppli </span> </div>
+              <div class="date"> JUNE 2011 - JUNE 2012 </div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> El Segundo, CA </div>
+              <ul class="experienceText">
+                <li> Performed analyses forecasting consumer electronics and wireless market trends </li>
+                <li> Prepared reports and articles to advise clients on financial decisions based on research projects </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <h3 class="subtitle"> Education & Certifications</h3>
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Harvey Mudd College  </div>
+              <div class="date">AUGUST 2007 - MAY 2011</div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Claremont, CA </div>
+              <ul class="experienceText">
+                <li>Graduated with a degree in general engineering</li>
+                <li>Degree program emphasized electrical and computer engineering, with classes including Computer Architecture, Microprocessor Design and Circuit Analysis</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> General Assembly </div>
+              <div class="date">NOVEMBER 2016 - MARCH 2017</div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Los Angeles, CA </div>
+              <ul class="experienceText">
+                <li>Javascript Development Certification</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 itemContainer">
+              <div class="itemTitle"> Engineer in Training (EIT) </div>
+              <div class="date"> APRIL 2011 </div>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Los Angeles, CA </div>
+              <ul class="experienceText">
+                <li> Electrical Engineering Certification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-4">
+        <div class="wrap container-fluid">
+          <div class="row text-center">
+            <h2 class="sectionTitle">Web Skills</h2>
+          </div>
+          <div class="col-xs-12 col-md-6 abilityContainer" ng-repeat="ability in skills">
+            <div class="ceneteredContain">
+              <div class="abilityName" style="width: 180px; float: left; ">
+                {{ability.skill}}
+              </div>
+              <div class="abilityLevel" style="width: 110px; float: right;">
+                <span ng-repeat="n in [] | range:ability.level">
+                  <i class="fa fa-circle" aria-hidden="true" ></i>
+                </span>
+                <span ng-repeat="n in [] | range:(5-ability.level)">
+                  <i class="fa fa-circle-o" aria-hidden="true" ></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-5">
+        <div class="wrap container-fluid">
+          <div class="row text-center">
+            <h2 id="finalSection" class="sectionTitle" style="color: white;">Contact</h2>
+          </div>
+          <div class="row text-center hidden-xs contactContainer">
+            <div class="contactItems">
+              <a ng-click="emailLink = true" ng-init="emailLink=false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <div id="tester" class="contactLink" ng-class="{'hider': emailLink}"><a href="mailto:rgmuna@gmail.com" target="_top">rgmuna@gmail.com</a> </div>
+            </div>
+            <div class="contactItems">
+              <a ng-click="emailLink2 = true" ng-init="emailLink2=false"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              <div id="tester" class="contactLink" ng-class="{'hider2': emailLink2}"> <a href="https://www.linkedin.com/in/roque-muna-46206531/" target="_blank">www.linkedin.com/in/roque-muna-46206531/</a> </div>
+            </div>
+            <div class="contactItems">
+              <a ng-click="emailLink3 = true" ng-init="emailLink3=false"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+              <div id="tester" class="contactLink" ng-class="{'hider3': emailLink3}"><a href="https://github.com/rgmuna" target="_blank"> https://github.com/rgmuna </a> </div>
+            </div>
+          </div>
+          <div class="row text-center visible-xs ">
+            <div class="contactItems">
+              <a href="mailto:rgmuna@gmail.com" target="_top"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <div class="contactItems">
+              <a href="https://www.linkedin.com/in/roque-muna-46206531/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="contactItems">
+              <a href="https://github.com/rgmuna" target="_blank"> <i class="fa fa-github-square" aria-hidden="true"></i> </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </body>
+
+</html>
+
+<script type="text/ng-template" id="modal.html">
+  <div class="modal-header" style="border: none;">
+    <h3 class="modal-title text-center" id="modal-title">{{allInfo.name}}</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <a href="{{allInfo.link}}" target="_blank"> <img ng-src="{{allInfo.img}}" alt=""> </a>
+    <div class="modalLink">
+      <a href="{{allInfo.link}}" target="_blank"> Website <i class="fa fa-link" aria-hidden="true"></i></a>
+    </div>
+    <div class="modalCaption">
+      {{allInfo.caption}}
+    </div>
+    <div class="modalCaption">
+      <span style="font-weight: 600;">Technologies used: </span> {{allInfo.technology}}
+    </div>
+    <div class="modalCaption">
+      <span style="font-weight: 600;">Date: </span> {{allInfo.date}}
+    </div>
+  </div>
+  <div class="modal-footer" style="border: none; text-align: center;">
+      <button class="modalBtn" type="button" ng-click="cancel()">Close</button>
+  </div>
+
+</script>
