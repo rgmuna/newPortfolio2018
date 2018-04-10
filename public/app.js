@@ -20,7 +20,7 @@ rmApp.controller('RMCtrl', ['$scope', '$document', '$uibModal', function($scope,
               level: 4
             },
     skill1: {
-              skill: 'JavaScript ECMAScript 5',
+              skill: 'JavaScript',
               level: 4
             },
     skill2: {
@@ -181,6 +181,14 @@ rmApp.controller('RMCtrl', ['$scope', '$document', '$uibModal', function($scope,
       technology: 'AngularJS, Firebase, UI-Router, UI-Bootstrap, HTTP GET requests, HTML5, CSS3'
     },
     portfolio3: {
+      name: 'Theiss Animations Company Website',
+      caption: 'Designed and built the Theiss Animations company website. Aside from displaying company information, the website collects names and email addresses for customers interested in the product.',
+      img: 'assets/img/theissAnimationsScreen.png',
+      date: 'In progress',
+      link: 'https://theissanimations.com/',
+      technology: 'AngularJS, Firebase, HTML5, CSS3'
+    },
+    portfolio4: {
       name: 'Hangman: Head to Head',
       caption: 'A game of hangman where two players face off in trying to guess a word without losing all their lives. This site utilizes Firebase as a backend allowing two people with the link to play simultaneously and constantly updates on the progress each player has made.',
       img: 'assets/img/hangman.jpg',
@@ -188,7 +196,7 @@ rmApp.controller('RMCtrl', ['$scope', '$document', '$uibModal', function($scope,
       link: 'https://hangman-game-eaec8.firebaseapp.com/',
       technology: 'jQuery, Bootstrap, AJAX request to API, HTML5, CSS3'
     },
-    portfolio4: {
+    portfolio5: {
       name: 'My Feeds',
       caption: "A project that pulls information from a variety of APIs and organizes it in a clean, easy to use interface. Read the 10 most recent headlines, check out the forecast in Los Angeles or look at NASA's pictures of the day.",
       img: 'assets/img/feedr.jpg',
